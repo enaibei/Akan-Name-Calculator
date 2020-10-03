@@ -110,6 +110,14 @@
                     form.result1.value = months[monthInput]+" "+form.day.value +", "+form.year.value
                     form.result3.value = days[val0]
 
+                    var genderValue = (form.gender.value)
+                    if (genderValue=="female"){
+                        form.result2.value = akanNamesFemale[val0]
+                    }else if (genderValue=="male"){
+                        form.result2.value = akanNamesMale[val0]
+                    }
+                }  
+
         </script>
     </body>
 </html>
