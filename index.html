@@ -7,24 +7,30 @@
     </head>
 
     <body class="container">
-        <h1>Akan Name Calculator</h1>
-        <p>This is a program that takes your birthday and calculates the day of the week you were born then outputs your Akan Name.</p>
-        <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
-        <p>Enter your birthday and hit the "Update" button to know your Akan Name:</p>
-        <form>
-            <!--The input part of the form where the user inputs their details-->
-            <p>Month (1-12): <input TYPE="text" NAME="month"> </p>
-            <p>Day of the Month (1-31): <input TYPE="text" NAME="day"> </p>
-            <p>Year (eg. 1994): <input TYPE="text" NAME="year"> </p>
-            <p>Gender (male/female): <input TYPE="text" NAME="gender"></p>
+        <div class="jumbotron">
+            <h1>Akan Name Calculator</h1>
+            <p>This is a program that takes your birthday and calculates the day of the week you were born then outputs your Akan Name.</p>
+            <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
+    
+            <p>Enter your birthday and hit the "Update" button to know your Akan Name:</p>
+            <form class="form1">
+                <!--The input part of the form where the user inputs their details-->
+                <p>Month (1-12): <input TYPE="text" NAME="month"> </p>
+                <p>Day of the Month (1-31): <input TYPE="text" NAME="day"> </p>
+                <p>Year (eg. 1994): <input TYPE="text" NAME="year"> </p>
+                <p>Gender (male/female): <input TYPE="text" NAME="gender"></p>
 
-            <!--Ouput part of the form-->
-            <p><input TYPE="button" VALUE="Update" ONCLICK="dayOfWeekCalculation(this.form)"> <input TYPE="reset"
-                VALUE="Clear"> </p>
-            <p>Date of Birth: <input TYPE="text" NAME="result1"> </p>
-            <p>Your Akan Name Is: <input TYPE="text" NAME="result2"> </p>
-            <p>Day of the Week: <input TYPE="text" NAME="result3"> </p>            
-        </form>
+                <!--Ouput part of the form-->
+                <p><input TYPE="button" VALUE="Update" ONCLICK="dayOfWeekCalculation(this.form)"> <input TYPE="reset"
+                    VALUE="Clear"> </p>
+                <p>Date of Birth: <input TYPE="text" NAME="result1"> </p>
+                <p>Your Akan Name Is: <input TYPE="text" NAME="result2"> </p>
+                <p>Day of the Week: <input TYPE="text" NAME="result3"> </p>            
+            </form>
+        </div>
+
+        
+        <!--JavaScript Code-->
         <script>
             function array(n) {
                     this.length = n;
@@ -121,4 +127,5 @@
 
         </script>
     </body>
+    <footer>Esther Naibei, Copyright &copy;2020 </footer>
 </html>
