@@ -11,12 +11,18 @@
         <p>This is a program that takes your birthday and calculates the day of the week you were born then outputs your Akan Name.</p>
         <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
         <form>
+            <!--The input part of the form where the user inputs their details-->
             <p>Month (1-12): <input TYPE="text" NAME="month"> </p>
             <p>Day of the Month (1-31): <input TYPE="text" NAME="day"> </p>
             <p>Year (eg. 1994): <input TYPE="text" NAME="year"> </p>
             <p>Gender (male/female): <input TYPE="text" NAME="gender"></p>
-          
-            
+
+            <!--Ouput part of the form-->
+            <p><input TYPE="button" VALUE="Update" ONCLICK="dayOfWeekCalculation(this.form)"> <input TYPE="reset"
+                VALUE="Clear"> </p>
+            <p>Date of Birth: <input TYPE="text" NAME="result1" SIZE="18"> </p>
+            <p>Your Akan Name Is: <input TYPE="text" NAME="result2" SIZE="18"> </p>
+            <p>Day of the Week: <input TYPE="text" NAME="result3"> </p>            
         </form>
         <script>
             function array(n) {
@@ -73,16 +79,16 @@
                 function dayOfWeekCalculation(form) {
                     var dayOfMonth = parseInt(form.day.value, 10)
                     if ((dayOfMonth < 0) || (dayOfMonth > 31)) {
-                        alert("Day is out of range")
+                        alert("Day is invalid! Input a valid date")
                     }
                     var monthInput = parseInt(form.month.value, 10)
                     if ((monthInput < 0) || (monthInput > 12)) {
-                        alert("Month is out of range")
+                        alert("Month is invalid! Input a valid month")
                     }  
                     var val2x = parseInt(form.month.value, 10)
                     var yearInput = parseInt(form.year.value, 10)
                     if (yearInput < 1900) {
-                        alert("You're that old!")
+                        alert("Damn are you that old?")
                     }
                     if (monthInput == 1) {
                         val2x = 13;
