@@ -4,7 +4,7 @@
 ## Set-up Instructions
 #### Fork the project to your repository and download the code to your local machine and run it with a live server
 ## GitHub Pages live link
-#### to be updated
+#### https://enaibei.github.io/Akan-Name-Calculator/
 ## Author Name
 #### Esther Naibei
 ## Licence and Copyright
